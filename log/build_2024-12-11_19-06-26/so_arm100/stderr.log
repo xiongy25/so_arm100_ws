@@ -1,0 +1,29 @@
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp: In member function ‘std::vector<unsigned char> FeetechMotorsBus::Impl::sendCommand(const std::vector<unsigned char>&)’:
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp:78:18: error: no matching function for call to ‘FeetechMotorsBus::Impl::write(int&, const unsigned char*, std::vector<unsigned char>::size_type)’
+   78 |         if (write(fd_, cmd.data(), cmd.size()) != static_cast<ssize_t>(cmd.size())) {
+      |             ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp:146:10: note: candidate: ‘void FeetechMotorsBus::Impl::write(const string&, const std::vector<int>&)’
+  146 |     void write(const std::string& param_name, const std::vector<int>& values) {
+      |          ^~~~~
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp:146:10: note:   candidate expects 2 arguments, 3 provided
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp:157:10: note: candidate: ‘void FeetechMotorsBus::Impl::write(const string&, int, const string&)’
+  157 |     void write(const std::string& param_name, int value, const std::string& motor_name) {
+      |          ^~~~~
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp:157:35: note:   no known conversion for argument 1 from ‘int’ to ‘const string&’ {aka ‘const std::__cxx11::basic_string<char>&’}
+  157 |     void write(const std::string& param_name, int value, const std::string& motor_name) {
+      |                ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp:87:25: error: no matching function for call to ‘FeetechMotorsBus::Impl::read(int&, unsigned char*, std::vector<unsigned char>::size_type)’
+   87 |         ssize_t n = read(fd_, response.data(), response.size());
+      |                     ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp:95:22: note: candidate: ‘std::vector<int> FeetechMotorsBus::Impl::read(const string&)’
+   95 |     std::vector<int> read(const std::string& param_name) {
+      |                      ^~~~
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp:95:22: note:   candidate expects 1 argument, 3 provided
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp:103:9: note: candidate: ‘int FeetechMotorsBus::Impl::read(const string&, const string&)’
+  103 |     int read(const std::string& param_name, const std::string& motor_name) {
+      |         ^~~~
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp:103:9: note:   candidate expects 2 arguments, 3 provided
+gmake[2]: *** [CMakeFiles/so_arm100.dir/build.make:93：CMakeFiles/so_arm100.dir/src/feetech.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:151：CMakeFiles/so_arm100.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

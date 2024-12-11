@@ -1,0 +1,4 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/ubuntu22/so_arm100_ws/build/so_arm100/CMakeCache.txt is different than the directory /home/ubuntu22/ros2_so_arm100/build/so_arm100 where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mCMake Error: The source directory "/home/ubuntu22/ros2_so_arm100/so_arm100" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.[0m
+gmake: *** [Makefile:267：cmake_check_build_system] 错误 1

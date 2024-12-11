@@ -1,0 +1,8 @@
+[ 50%] Building CXX object CMakeFiles/so_arm100.dir/src/feetech_hardware_interface.cpp.o
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech_hardware_interface.cpp:13:10: fatal error: motors/feetech.hpp: 没有那个文件或目录
+   13 | #include "motors/feetech.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/so_arm100.dir/build.make:79：CMakeFiles/so_arm100.dir/src/feetech_hardware_interface.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:151：CMakeFiles/so_arm100.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

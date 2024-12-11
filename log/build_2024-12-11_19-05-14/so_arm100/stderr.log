@@ -1,0 +1,10 @@
+/home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech_hardware_interface.cpp:18:8: error: redefinition of ‘struct so_arm100::JointConfig’
+   18 | struct JointConfig {
+      |        ^~~~~~~~~~~
+In file included from /home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech_hardware_interface.cpp:1:
+/home/ubuntu22/ros2_so_arm100/so_arm100/include/so_arm100/feetech_hardware_interface.hpp:20:8: note: previous definition of ‘struct so_arm100::JointConfig’
+   20 | struct JointConfig {
+      |        ^~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/so_arm100.dir/build.make:79：CMakeFiles/so_arm100.dir/src/feetech_hardware_interface.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:151：CMakeFiles/so_arm100.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

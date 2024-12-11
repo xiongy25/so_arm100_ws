@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="so_arm100">
+    <xacro:arg name="prefix" default=""/>
+    <xacro:arg name="hardware_type" default="mock_components"/>
+
+    <!-- Import main macro -->
+    <xacro:include filename="$(find so_arm100)/urdf/so_arm100_macro.xacro"/>
+
+    <!-- Create robot by calling main macro -->
+    <xacro:so_arm100 prefix="$(arg prefix)"/>
+
+    <ros2_control name="so_arm100_system" type="system">
+        <hardware>
+            <xacro:if value="${'$(arg hardware_type)' == 'mock_components'}">
+                <plugin>mock_components/GenericSystem</plugin>
+            </xacro:if>
+            <xacro:if value="${'$(arg hardware_type)' == 'real'}">
+                <plugin>feetech_ros2_driver/FeetechHardwareInterface</plugin>
+                <param name="usb_port">/dev/LeRobotFollower</param>
+            </xacro:if>
+        </hardware>
+        <joint name="shoulder_pan_joint">
+            <param name="id">1</param>
+            <param name="offset">2048</param>
+            <param name="p_coefficient">8</param>
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="shoulder_lift_joint">
+            <param name="id">2</param>
+            <param name="offset">2125</param>
+            <param name="p_coefficient">16</param>
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="elbow_joint">
+            <param name="id">3</param>
+            <param name="offset">2080</param>
+            <param name="p_coefficient">16</param>
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="wrist_pitch_joint">
+            <param name="id">4</param>
+            <param name="offset">3110</param>
+            <param name="p_coefficient">16</param>
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="wrist_roll_joint">
+            <param name="id">5</param>
+            <param name="offset">2048</param>
+            <param name="p_coefficient">16</param>
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="jaw_joint">
+            <param name="id">6</param>
+            <param name="offset">2048</param>
+            <param name="p_coefficient">16</param>
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+
+    <gazebo>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+            <parameters>$(find so_arm100_moveit_config)/config/controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
+</robot>

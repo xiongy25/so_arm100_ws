@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+so_arm100.egg-info/PKG-INFO
+so_arm100.egg-info/SOURCES.txt
+so_arm100.egg-info/dependency_links.txt
+so_arm100.egg-info/requires.txt
+so_arm100.egg-info/top_level.txt

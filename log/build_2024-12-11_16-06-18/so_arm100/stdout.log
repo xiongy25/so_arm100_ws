@@ -1,0 +1,53 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /home/ubuntu22/anaconda3/bin/python3 (found version "3.10.9") found components: Interpreter
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu22/ros2_so_arm100/build/so_arm100
+-- Install configuration: ""
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//launch
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//launch/display.launch.py
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//launch/controllers_bringup.launch.py
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//launch/display.launch
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//launch/gazebo.launch
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//meshes
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//meshes/jaw_link.STL
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//meshes/shoulder_link.STL
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//meshes/wrist_2_link.STL
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//meshes/forearm_link.STL
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//meshes/Base.STL
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//meshes/wrist_1_link.STL
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//meshes/upper_arm_link.STL
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//urdf
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//urdf/so_arm100.csv
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//urdf/so_arm100.urdf
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//urdf/so_arm100.urdf.xacro
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//config
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//config/urdf.rviz
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100//config/joint_names_so_arm100.yaml
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/ament_index/resource_index/package_run_dependencies/so_arm100
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/ament_index/resource_index/parent_prefix_path/so_arm100
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/environment/path.sh
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/environment/path.dsv
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/local_setup.bash
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/local_setup.sh
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/local_setup.zsh
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/local_setup.dsv
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/package.dsv
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/ament_index/resource_index/packages/so_arm100
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/cmake/so_arm100Config.cmake
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/cmake/so_arm100Config-version.cmake
+-- Installing: /home/ubuntu22/ros2_so_arm100/install/so_arm100/share/so_arm100/package.xml

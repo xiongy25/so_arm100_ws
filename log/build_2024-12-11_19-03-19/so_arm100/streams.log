@@ -1,0 +1,10 @@
+[0.006s] Invoking command in '/home/ubuntu22/ros2_so_arm100/build/so_arm100': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake --build /home/ubuntu22/ros2_so_arm100/build/so_arm100 -- -j16 -l16
+[0.077s] [ 50%] Building CXX object CMakeFiles/so_arm100.dir/src/feetech_hardware_interface.cpp.o
+[0.201s] /home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech_hardware_interface.cpp:13:10: fatal error: motors/feetech.hpp: 没有那个文件或目录
+[0.201s]    13 | #include "motors/feetech.hpp"
+[0.201s]       |          ^~~~~~~~~~~~~~~~~~~~
+[0.201s] compilation terminated.
+[0.209s] gmake[2]: *** [CMakeFiles/so_arm100.dir/build.make:79：CMakeFiles/so_arm100.dir/src/feetech_hardware_interface.cpp.o] 错误 1
+[0.209s] gmake[1]: *** [CMakeFiles/Makefile2:151：CMakeFiles/so_arm100.dir/all] 错误 2
+[0.209s] gmake: *** [Makefile:146：all] 错误 2
+[0.210s] Invoked command in '/home/ubuntu22/ros2_so_arm100/build/so_arm100' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake --build /home/ubuntu22/ros2_so_arm100/build/so_arm100 -- -j16 -l16
