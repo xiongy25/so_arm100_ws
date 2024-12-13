@@ -49,7 +49,7 @@ python3 test_arm_direct_2.py
 - elbow_joint: ID 3
 - wrist_pitch_joint: ID 4
 - wrist_roll_joint: ID 5
--jaw_joint: ID 6
+- jaw_joint: ID 6
 
 ## 5. MoveIt控制模式
 
