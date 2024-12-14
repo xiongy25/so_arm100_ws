@@ -135,7 +135,7 @@ key_to_action = {
 # 主控制循环
 def control_loop():
     running = True
-    step_increment = 80  # 增加步进值到80，使移动更明显
+    step_increment = 50  # 增加步进值到80，使移动更明显
     
     # 设置所有关节的运行速度和扭矩限制
     joints = ["shoulder_lift_joint", "shoulder_pan_joint", "elbow_joint", "wrist_pitch_joint", "wrist_roll_joint", "jaw_joint"]
