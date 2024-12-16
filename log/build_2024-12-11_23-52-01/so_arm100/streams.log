@@ -1,6 +1,0 @@
-[0.006s] Invoking command in '/home/ubuntu22/so_arm100_ws/build/so_arm100': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake --build /home/ubuntu22/so_arm100_ws/build/so_arm100 -- -j16 -l16
-[0.052s] [0mCMake Error: The current CMakeCache.txt directory /home/ubuntu22/so_arm100_ws/build/so_arm100/CMakeCache.txt is different than the directory /home/ubuntu22/ros2_so_arm100/build/so_arm100 where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0.056s] [0mCMake Error: The source directory "/home/ubuntu22/ros2_so_arm100/so_arm100" does not exist.
-[0.056s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.056s] gmake: *** [Makefile:267：cmake_check_build_system] 错误 1
-[0.057s] Invoked command in '/home/ubuntu22/so_arm100_ws/build/so_arm100' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake --build /home/ubuntu22/so_arm100_ws/build/so_arm100 -- -j16 -l16

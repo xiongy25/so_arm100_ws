@@ -1,7 +1,7 @@
 CMakeFiles/so_arm100.dir/src/feetech.cpp.o: \
- /home/ubuntu22/ros2_so_arm100/so_arm100/src/feetech.cpp \
+ /home/ubuntu22/so_arm100_ws/so_arm100/src/feetech.cpp \
  /usr/include/stdc-predef.h \
- /home/ubuntu22/ros2_so_arm100/so_arm100/include/motors/feetech.hpp \
+ /home/ubuntu22/so_arm100_ws/so_arm100/include/motors/feetech.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

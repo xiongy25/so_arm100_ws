@@ -1,1 +1,1 @@
-/home/ubuntu22/ros2_so_arm100/so_arm100/config/joint_names_so_arm100.yaml
+controller_joint_names: ['', 'shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint', 'wrist_pitch_joint', 'wrist_roll_joint', 'jaw_joint', ]

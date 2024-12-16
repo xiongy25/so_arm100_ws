@@ -1,2 +1,0 @@
-Invoking command in '/home/ubuntu22/ros2_so_arm100/build/so_arm100': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake /home/ubuntu22/ros2_so_arm100/so_arm100 -DCMAKE_INSTALL_PREFIX=/home/ubuntu22/ros2_so_arm100/install/so_arm100
-Invoked command in '/home/ubuntu22/ros2_so_arm100/build/so_arm100' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake /home/ubuntu22/ros2_so_arm100/so_arm100 -DCMAKE_INSTALL_PREFIX=/home/ubuntu22/ros2_so_arm100/install/so_arm100

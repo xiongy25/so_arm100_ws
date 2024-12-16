@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu22/ros2_so_arm100/so_arm100_moveit_config
+# Install script for directory: /home/ubuntu22/so_arm100_ws/so_arm100_moveit_config
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu22/ros2_so_arm100/install/so_arm100_moveit_config")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu22/so_arm100_ws/install/so_arm100_moveit_config")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,17 +43,84 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/ubuntu22/ros2_so_arm100/build/so_arm100_moveit_config/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/so_arm100_moveit_config")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/so_arm100_moveit_config" TYPE DIRECTORY FILES "/home/ubuntu22/ros2_so_arm100/so_arm100_moveit_config/scripts/" USE_SOURCE_PERMISSIONS)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/so_arm100_moveit_config")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config/environment" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config/environment" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_index/share/ament_index/resource_index/packages/so_arm100_moveit_config")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config/cmake" TYPE FILE FILES
+    "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_core/so_arm100_moveit_configConfig.cmake"
+    "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/ament_cmake_core/so_arm100_moveit_configConfig-version.cmake"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/so_arm100_moveit_config/package.xml")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config" TYPE DIRECTORY FILES "/home/ubuntu22/so_arm100_ws/so_arm100_moveit_config/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config" TYPE DIRECTORY FILES "/home/ubuntu22/so_arm100_ws/so_arm100_moveit_config/config")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/so_arm100_moveit_config" TYPE FILE FILES "/home/ubuntu22/so_arm100_ws/so_arm100_moveit_config/.setup_assistant")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/so_arm100_moveit_config" TYPE DIRECTORY FILES "/home/ubuntu22/so_arm100_ws/so_arm100_moveit_config/scripts/" USE_SOURCE_PERMISSIONS)
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/ubuntu22/ros2_so_arm100/build/so_arm100_moveit_config/install_local_manifest.txt"
+  file(WRITE "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -69,6 +136,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/ubuntu22/ros2_so_arm100/build/so_arm100_moveit_config/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

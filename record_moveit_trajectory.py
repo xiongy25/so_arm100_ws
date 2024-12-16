@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# 记录moveit规划的轨迹数据
 
 import rclpy
 from rclpy.node import Node

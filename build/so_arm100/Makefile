@@ -57,10 +57,10 @@ RM = /home/ubuntu22/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu22/ros2_so_arm100/so_arm100
+CMAKE_SOURCE_DIR = /home/ubuntu22/so_arm100_ws/so_arm100
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu22/ros2_so_arm100/build/so_arm100
+CMAKE_BINARY_DIR = /home/ubuntu22/so_arm100_ws/build/so_arm100
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu22/ros2_so_arm100/build/so_arm100/CMakeFiles /home/ubuntu22/ros2_so_arm100/build/so_arm100//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu22/so_arm100_ws/build/so_arm100/CMakeFiles /home/ubuntu22/so_arm100_ws/build/so_arm100//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu22/ros2_so_arm100/build/so_arm100/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu22/so_arm100_ws/build/so_arm100/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -197,43 +197,6 @@ so_arm100_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_arm100_uninstall.dir/build.make CMakeFiles/so_arm100_uninstall.dir/build
 .PHONY : so_arm100_uninstall/fast
 
-#=============================================================================
-# Target rules for targets named so_arm100
-
-# Build rule for target.
-so_arm100: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 so_arm100
-.PHONY : so_arm100
-
-# fast build rule for target.
-so_arm100/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_arm100.dir/build.make CMakeFiles/so_arm100.dir/build
-.PHONY : so_arm100/fast
-
-src/feetech.o: src/feetech.cpp.o
-.PHONY : src/feetech.o
-
-# target to build an object file
-src/feetech.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_arm100.dir/build.make CMakeFiles/so_arm100.dir/src/feetech.cpp.o
-.PHONY : src/feetech.cpp.o
-
-src/feetech.i: src/feetech.cpp.i
-.PHONY : src/feetech.i
-
-# target to preprocess a source file
-src/feetech.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_arm100.dir/build.make CMakeFiles/so_arm100.dir/src/feetech.cpp.i
-.PHONY : src/feetech.cpp.i
-
-src/feetech.s: src/feetech.cpp.s
-.PHONY : src/feetech.s
-
-# target to generate assembly for a file
-src/feetech.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so_arm100.dir/build.make CMakeFiles/so_arm100.dir/src/feetech.cpp.s
-.PHONY : src/feetech.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,10 +212,6 @@ help:
 	@echo "... test"
 	@echo "... so_arm100_uninstall"
 	@echo "... uninstall"
-	@echo "... so_arm100"
-	@echo "... src/feetech.o"
-	@echo "... src/feetech.i"
-	@echo "... src/feetech.s"
 .PHONY : help
 
 

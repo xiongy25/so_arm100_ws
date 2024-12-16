@@ -1,0 +1,8 @@
+[0.006s] Invoking command in '/home/ubuntu22/so_arm100_ws/build/so_arm100': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake --build /home/ubuntu22/so_arm100_ws/build/so_arm100 -- -j16 -l16
+[0.069s] [ 50%] [32mBuilding CXX object CMakeFiles/so_arm100.dir/src/feetech.cpp.o[0m
+[0.072s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/ubuntu22/so_arm100_ws/so_arm100/src/feetech.cpp: 没有那个文件或目录
+[0.072s] compilation terminated.
+[0.072s] gmake[2]: *** [CMakeFiles/so_arm100.dir/build.make:79：CMakeFiles/so_arm100.dir/src/feetech.cpp.o] 错误 1
+[0.072s] gmake[1]: *** [CMakeFiles/Makefile2:151：CMakeFiles/so_arm100.dir/all] 错误 2
+[0.073s] gmake: *** [Makefile:146：all] 错误 2
+[0.074s] Invoked command in '/home/ubuntu22/so_arm100_ws/build/so_arm100' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake --build /home/ubuntu22/so_arm100_ws/build/so_arm100 -- -j16 -l16

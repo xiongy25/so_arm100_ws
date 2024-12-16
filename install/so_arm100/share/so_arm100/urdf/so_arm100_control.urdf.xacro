@@ -1,1 +1,60 @@
-/home/ubuntu22/ros2_so_arm100/so_arm100/urdf/so_arm100_control.urdf.xacro
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="so_arm100">
+
+    <!-- Import the original URDF -->
+    <xacro:include filename="$(find so_arm100)/urdf/so_arm100.urdf"/>
+
+    <!-- ros2_control plugin -->
+    <xacro:macro name="so_arm100_ros2_control">
+        <ros2_control name="so_arm100_system" type="system">
+            <hardware>
+                <plugin>mock_components/GenericSystem</plugin>
+            </hardware>
+            
+            <!-- Arm joints -->
+            <joint name="shoulder_pan_joint">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="shoulder_lift_joint">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="elbow_joint">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="wrist_pitch_joint">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="wrist_roll_joint">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint>
+            
+            <!-- Gripper joint -->
+            <joint name="jaw_joint">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint>
+        </ros2_control>
+
+        <!-- Gazebo plugin for ros2_control -->
+        <gazebo>
+            <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+                <parameters>$(find so_arm100_moveit_config)/config/ros2_controllers.yaml</parameters>
+            </plugin>
+        </gazebo>
+    </xacro:macro>
+
+    <!-- Include the ros2_control macro -->
+    <xacro:so_arm100_ros2_control/>
+
+</robot>

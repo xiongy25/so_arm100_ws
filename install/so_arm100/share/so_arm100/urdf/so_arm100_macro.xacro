@@ -1,1 +1,6 @@
-/home/ubuntu22/ros2_so_arm100/so_arm100/urdf/so_arm100_macro.xacro
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="so_arm100" params="prefix">
+        <xacro:include filename="$(find so_arm100)/urdf/so_arm100.urdf"/>
+    </xacro:macro>
+</robot>

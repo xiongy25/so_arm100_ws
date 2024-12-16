@@ -1,0 +1,106 @@
+[0.006s] Invoking command in '/home/ubuntu22/so_arm100_ws/build/so_arm100': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake /home/ubuntu22/so_arm100_ws/so_arm100 -DCMAKE_INSTALL_PREFIX=/home/ubuntu22/so_arm100_ws/install/so_arm100
+[0.052s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.052s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.052s]   CMake.
+[0.052s] 
+[0.053s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.053s]   CMake that the project does not need compatibility with older versions.
+[0.053s] 
+[0.053s] [0m
+[0.140s] -- The C compiler identification is GNU 11.4.0
+[0.246s] -- The CXX compiler identification is GNU 11.4.0
+[0.253s] -- Detecting C compiler ABI info
+[0.295s] -- Detecting C compiler ABI info - done
+[0.306s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.306s] -- Detecting C compile features
+[0.307s] -- Detecting C compile features - done
+[0.316s] -- Detecting CXX compiler ABI info
+[0.379s] -- Detecting CXX compiler ABI info - done
+[0.392s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.393s] -- Detecting CXX compile features
+[0.394s] -- Detecting CXX compile features - done
+[0.409s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.521s] -- Found Python3: /home/ubuntu22/anaconda3/bin/python3 (found version "3.10.9") found components: Interpreter
+[0.585s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.625s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.629s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.636s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.646s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.660s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.699s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.701s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.764s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[0.784s] -- Found FastRTPS: /opt/ros/humble/include
+[0.814s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.822s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.882s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.883s] -- Found Threads: TRUE
+[0.936s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.010s] -- Configuring done (1.0s)
+[1.017s] -- Generating done (0.0s)
+[1.018s] -- Build files have been written to: /home/ubuntu22/so_arm100_ws/build/so_arm100
+[1.024s] Invoked command in '/home/ubuntu22/so_arm100_ws/build/so_arm100' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake /home/ubuntu22/so_arm100_ws/so_arm100 -DCMAKE_INSTALL_PREFIX=/home/ubuntu22/so_arm100_ws/install/so_arm100
+[1.025s] Invoking command in '/home/ubuntu22/so_arm100_ws/build/so_arm100': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake --build /home/ubuntu22/so_arm100_ws/build/so_arm100 -- -j16 -l16
+[1.094s] [ 50%] [32mBuilding CXX object CMakeFiles/so_arm100.dir/src/feetech.cpp.o[0m
+[1.324s] [01m[K/home/ubuntu22/so_arm100_ws/so_arm100/src/feetech.cpp:[m[K In constructor ‘[01m[KFeetechMotorsBus::Impl::Impl(const string&, const std::map<std::__cxx11::basic_string<char>, std::pair<int, std::__cxx11::basic_string<char> > >&)[m[K’:
+[1.325s] [01m[K/home/ubuntu22/so_arm100_ws/so_arm100/src/feetech.cpp:198:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KFeetechMotorsBus::Impl::port_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.325s]   198 |     std::string [01;35m[Kport_[m[K;
+[1.325s]       |                 [01;35m[K^~~~~[m[K
+[1.325s] [01m[K/home/ubuntu22/so_arm100_ws/so_arm100/src/feetech.cpp:12:56:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, std::pair<int, std::__cxx11::basic_string<char> > > FeetechMotorsBus::Impl::motors_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.325s]    12 |     std::map<std::string, std::pair<int, std::string>> [01;35m[Kmotors_[m[K;
+[1.325s]       |                                                        [01;35m[K^~~~~~~[m[K
+[1.325s] [01m[K/home/ubuntu22/so_arm100_ws/so_arm100/src/feetech.cpp:14:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.325s]    14 |     [01;35m[KImpl[m[K(const std::string& port,
+[1.325s]       |     [01;35m[K^~~~[m[K
+[1.325s] [01m[K/home/ubuntu22/so_arm100_ws/so_arm100/src/feetech.cpp:12:56:[m[K [01;35m[Kwarning: [m[K‘[01m[KFeetechMotorsBus::Impl::motors_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.325s]    12 |     std::map<std::string, std::pair<int, std::string>> [01;35m[Kmotors_[m[K;
+[1.325s]       |                                                        [01;35m[K^~~~~~~[m[K
+[1.325s] [01m[K/home/ubuntu22/so_arm100_ws/so_arm100/src/feetech.cpp:11:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint FeetechMotorsBus::Impl::fd_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.325s]    11 |     int [01;35m[Kfd_[m[K;
+[1.325s]       |         [01;35m[K^~~[m[K
+[1.325s] [01m[K/home/ubuntu22/so_arm100_ws/so_arm100/src/feetech.cpp:14:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.325s]    14 |     [01;35m[KImpl[m[K(const std::string& port,
+[1.326s]       |     [01;35m[K^~~~[m[K
+[1.463s] [100%] [32m[1mLinking CXX shared library libso_arm100.so[0m
+[1.536s] [100%] Built target so_arm100
+[1.539s] Invoked command in '/home/ubuntu22/so_arm100_ws/build/so_arm100' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake --build /home/ubuntu22/so_arm100_ws/build/so_arm100 -- -j16 -l16
+[1.590s] Invoking command in '/home/ubuntu22/so_arm100_ws/build/so_arm100': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake --install /home/ubuntu22/so_arm100_ws/build/so_arm100
+[1.639s] -- Install configuration: ""
+[1.639s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/include
+[1.639s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/include/so_arm100
+[1.639s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/include/motors
+[1.639s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/include/motors/feetech.hpp
+[1.639s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/urdf
+[1.639s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/urdf/so_arm100_control.urdf.xacro
+[1.640s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/urdf/so_arm100_macro.xacro
+[1.640s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/urdf/so_arm100.csv
+[1.640s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/urdf/so_arm100.urdf
+[1.640s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/urdf/so_arm100.urdf.xacro
+[1.640s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/urdf/so_arm100
+[1.640s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/urdf/so_arm100/so_arm100.usd
+[1.643s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/config
+[1.643s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/config/urdf.rviz
+[1.643s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/config/joint_names_so_arm100.yaml
+[1.643s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/lib/libso_arm100.so
+[1.644s] -- Set non-toolchain portion of runtime path of "/home/ubuntu22/so_arm100_ws/install/so_arm100/lib/libso_arm100.so" to ""
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/environment/library_path.sh
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/environment/library_path.dsv
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/ament_index/resource_index/package_run_dependencies/so_arm100
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/ament_index/resource_index/parent_prefix_path/so_arm100
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/environment/ament_prefix_path.sh
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/environment/ament_prefix_path.dsv
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/environment/path.sh
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/environment/path.dsv
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/local_setup.bash
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/local_setup.sh
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/local_setup.zsh
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/local_setup.dsv
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/package.dsv
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/ament_index/resource_index/packages/so_arm100
+[1.644s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.645s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/cmake/ament_cmake_export_libraries-extras.cmake
+[1.645s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.645s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/cmake/so_arm100Config.cmake
+[1.645s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/cmake/so_arm100Config-version.cmake
+[1.645s] -- Installing: /home/ubuntu22/so_arm100_ws/install/so_arm100/share/so_arm100/package.xml
+[1.646s] Invoked command in '/home/ubuntu22/so_arm100_ws/build/so_arm100' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/ubuntu22/.local/bin/cmake --install /home/ubuntu22/so_arm100_ws/build/so_arm100

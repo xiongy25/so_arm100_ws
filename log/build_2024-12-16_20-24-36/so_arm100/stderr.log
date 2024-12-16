@@ -1,0 +1,5 @@
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/ubuntu22/so_arm100_ws/so_arm100/src/feetech.cpp: 没有那个文件或目录
+compilation terminated.
+gmake[2]: *** [CMakeFiles/so_arm100.dir/build.make:79：CMakeFiles/so_arm100.dir/src/feetech.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:151：CMakeFiles/so_arm100.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

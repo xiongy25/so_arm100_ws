@@ -53,10 +53,10 @@ RM = /home/ubuntu22/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu22/ros2_so_arm100/so_arm100_moveit_config
+CMAKE_SOURCE_DIR = /home/ubuntu22/so_arm100_ws/so_arm100_moveit_config
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu22/ros2_so_arm100/build/so_arm100_moveit_config
+CMAKE_BINARY_DIR = /home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config
 
 # Utility rule file for uninstall.
 
@@ -81,6 +81,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/ubuntu22/ros2_so_arm100/build/so_arm100_moveit_config && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu22/ros2_so_arm100/so_arm100_moveit_config /home/ubuntu22/ros2_so_arm100/so_arm100_moveit_config /home/ubuntu22/ros2_so_arm100/build/so_arm100_moveit_config /home/ubuntu22/ros2_so_arm100/build/so_arm100_moveit_config /home/ubuntu22/ros2_so_arm100/build/so_arm100_moveit_config/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu22/so_arm100_ws/so_arm100_moveit_config /home/ubuntu22/so_arm100_ws/so_arm100_moveit_config /home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config /home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config /home/ubuntu22/so_arm100_ws/build/so_arm100_moveit_config/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

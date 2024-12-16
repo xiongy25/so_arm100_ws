@@ -73,7 +73,7 @@ ros2 launch so_arm100_moveit_config demo.launch.py
 
 #### 5.2.2 使用步骤
 
-1. 启动轨迹记录器：
+1. 启动轨迹记录器（需退出conda环境）：
 ```bash
 python3 record_moveit_trajectory.py
 ```
@@ -82,7 +82,7 @@ python3 record_moveit_trajectory.py
 
 3. 执行记录的轨迹：
 ```bash
-python3 execute_recorded_trajectory.py recorded_trajectories/trajectory_20241211_233444_part1.json
+python3 execute_recorded_trajectory.py recorded_trajectories/trajectory_20241216_203810_part1.json
 ```
 
 #### 5.2.3 轨迹文件格式

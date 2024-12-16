@@ -1,1 +1,2 @@
-/home/ubuntu22/ros2_so_arm100/build/so_arm100/ament_cmake_environment_hooks/local_setup.dsv
+source;share/so_arm100/environment/ament_prefix_path.sh
+source;share/so_arm100/environment/path.sh

@@ -1,3 +1,5 @@
+<!-- moveit与真实机械臂的连接目前还存在问题 -->
+
 # SO-ARM100 机械臂 MoveIt 控制指南
 
 本指南将帮助你在 Ubuntu 22.04 和 ROS2 Humble 环境下配置和控制 SO-ARM100 机械臂。
